@@ -1,0 +1,4 @@
+The project is a simulation of a supermarket website where you can buy item, make groceries list, show the list 
+and add elements to the cart all with voice command. 
+The structure is the following in the front-end (angular, boostrap), the back-end is develop with in API (C#, .netcore) 
+and database for storage.    

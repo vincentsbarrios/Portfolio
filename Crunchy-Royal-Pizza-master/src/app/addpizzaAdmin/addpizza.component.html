@@ -1,0 +1,84 @@
+<div class="container">
+    <h1>Agregar Pizza al Menu</h1>
+    <hr>
+    <div class="col-md-6">
+      
+      <form [formGroup]="newPizzaForm" autocomplete="off" (ngSubmit)="fnUpdate(newPizzaForm.value)" novalidate>
+  
+        <div class="form-group" [ngClass]="{'error': NoValididId()}">
+          <label for="idpizza">ID Pizza:</label>
+          <em *ngIf="NoValididId() && newPizzaForm.controls.idpizza?.errors.required">Este campo es requerido</em>
+          <input formControlName="idpizza" id="idpizza" type="text" class="form-control" placeholder="Pizza Id..." />
+        </div>
+  
+        <div class="form-group" [ngClass]="{'error': NoValidNameProduct()}">
+          <label for="name">Nombre:</label>
+          <em *ngIf="NoValidNameProduct() && newPizzaForm.controls.name?.errors.required">Este campo es requerido</em>
+          <input formControlName="name" id="name" type="text" class="form-control" placeholder="Nombre Producto..." />
+        </div>
+  
+        <div class="form-group"  [ngClass]="{'error': NoValiddescription()}">
+          <label for="description">Descripcion:</label>
+          <em *ngIf="NoValiddescription() && newPizzaForm.controls.description?.errors.required">Este campo es requerido</em>
+          <input formControlName="description" id="description" type="text" class="form-control" placeholder="Descripcion del producto..." />
+        </div>
+  
+        <div class="form-group"  [ngClass]="{'error': NoValidprecio()}">
+          <label for="price">Precio:</label>
+          <em *ngIf="NoValidprecio() && newPizzaForm.controls.price?.errors.required">Este campo es requerido</em>
+          <input formControlName="price" id="price" type="text" class="form-control" placeholder="Precio del producto..." />
+        </div>
+  
+        <div class="form-group"  [ngClass]="{'error': NoValidimage()}">
+          <em *ngIf="NoValidimage() && newPizzaForm.controls.image?.errors.required">Este campo es requerido</em>
+          <label for="image">Imagen:</label>
+          <input formControlName="image" id="image" type="text" class="form-control" placeholder="URL de la imagen" />
+        </div>
+  
+        <button class="button" type="submit" style="vertical-align:middle" ><span>Enviar Solicitud</span></button>
+    <br><br>
+    <button class="cancelbtn" (click)="fnCancel()" style="vertical-align:middle"><span>Cancel</span></button>
+    <br><br>
+    <button type="button"  class="mybtn" data-toggle="modal" data-target="#exampleModal">
+        Inventario
+      </button>
+      </form>
+    </div>
+  </div>
+
+  
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Inventario de Pizza</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+            <table class="table table-dark" *ngFor="let varname of pizzaMenu">
+                <tbody>
+                  <tr>
+                    <th scope="row">{{varname?.id}}</th>
+                    <td  class="tdimage">
+                        <img class="imgcontainer" [src]=varname?.image/>
+                    </td>
+                    <td class="tdinfo">{{varname?.name}}</td>
+                    <td class="tdinfo">{{varname?.description}}</td>
+                    <td class="tdinfo">{{varname?.price}}</td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

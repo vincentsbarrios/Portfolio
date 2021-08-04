@@ -1,0 +1,2 @@
+Crunchy Royal Pizza is a project mostly concentrated in the UI part where the website is developed with angular. 
+The website has multiple windows simulating the complete experience of a working pizza site. 

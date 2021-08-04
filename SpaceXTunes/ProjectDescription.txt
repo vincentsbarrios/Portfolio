@@ -1,0 +1,3 @@
+SpacexTunes is a simple replica of the famous ITunes store where you can buy song, buy albums, have 
+rating and a cart. The project is divided in front-end part and the back end with an api that contain a 
+database. The tools use for this website were angular,boostrap,ant and .netcore.

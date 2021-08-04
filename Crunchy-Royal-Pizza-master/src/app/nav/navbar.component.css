@@ -1,0 +1,16 @@
+.nav-link{
+    color: rgb(255, 115, 0);
+}
+
+navbar navbar-dark bg-dark{
+    background-color: rgb(30, 255, 0);
+}
+
+.active{
+    color: orange;
+  }
+
+.welcomename{
+    color: rgb(0, 195, 255);
+    pointer-events: none;
+}

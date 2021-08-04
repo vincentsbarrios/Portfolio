@@ -1,0 +1,29 @@
+<div class="row">
+  <address-c style="width: 72%;"></address-c>
+
+
+
+<div style="background-color: rgba(255, 145, 0, 0.74); width: 28%;" >
+<h1 style="text-align: center;"> Cart </h1>
+<div >
+  <table class="table" *ngFor="let varname of checkArray">
+    <tbody >
+      <tr >       
+        <th scope="row">{{varname?.id}}</th>
+        <td class="tdinfo">{{varname?.name}}</td>
+        <td class="tdinfo">Lps. {{varname?.price}}</td>
+        <td>
+          <button class="btn btn-outline-secondary mr-3"
+                    style="width:80px;"
+                    type="button"
+                    title="Cancel your edits" (click)="fnDelete(varname)">
+              Borrar
+            </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+

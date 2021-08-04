@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/home" style="color: aquamarine">Wholes Food</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" routerLink="/home/{{globalId}}" style="color: aquamarine">Home <span
+          class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" routerLink="/groceries/{{globalId}}" style="color: aquamarine">Cart</a>
+
+
+
+
+
+
+      <button nz-button nzType="primary" nz-icon nzType="audio" nzTheme="outline" nzShape="circle"
+        (click)="TurnOnmic($event)"
+        style=" background-color: rgba(0, 255, 153, 0); color: black; margin-left: 960%; border-color: aquamarine;"
+        [nzTheme]="'twotone'" [nzTwotoneColor]="'#00ffa6'"></button>
+
+
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,94 @@
+.row
+{
+    padding-left: 2%;
+    padding-bottom: 10px;
+}
+
+.container{
+  padding-left: 20%;
+}
+
+.imgcontainer{
+  width: 100px;
+}
+
+.cartwindow{
+  padding-left: 0%;
+  width: 65%;
+  background-color: violet;
+}
+
+.loginbtn
+{
+    width: 100%;
+}
+
+.mybtn{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #696969;
+  border: none;
+  color: #FFFFFF;
+  font-size: 19px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.cancelbtn
+{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    font-size: 19px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    font-size: 19px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  em {float:right; color:#E05C65; padding-left: 10px;}
+    .error input {background-color:#E3C3C5;}
+    .error ::-webkit-input-placeholder { color: #999; }
+    .error ::-moz-placeholder { color: #999; }
+    .error :-moz-placeholder { color:#999; }
+    .error :ms-input-placeholder { color: #999; }

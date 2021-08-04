@@ -1,0 +1,64 @@
+<div *ngIf="show" class="alert alert-success" role="alert">
+  Thank you for your purchased of {{songName}}!
+  <button type="button" class="close" (click)="closeNotification()" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="page">
+    <div >
+         <div class="cart">
+        <img src={{detailsAlbums.img}} style="width: 300px; height: 300px; margin-top: 0px; margin-left: 0px;">
+    </div>
+    <br>
+    <br>
+    <h6 style="margin-left: 125px; color: greenyellow;">Rating</h6>
+    <nz-rate [(ngModel)]="value" (click)="onRating()" [nzTooltips]="tooltips" style="margin-left: 80px;"></nz-rate>
+    <br>
+    <br>
+    <h6 style="margin-left: 115px; color: greenyellow;">Popularity</h6>
+    <nz-rate [(ngModel)]="valueS" [nzTooltips]="tooltips" disabled style="margin-left: 80px;"></nz-rate>
+    <br>
+    <br>
+    <button type="button" (click)="addToCart(detailsAlbums)" [disabled]="detailsAlbums.state" [ngClass]="{'myButtonDisable' : detailsAlbums.state, 'myButton': !detailsAlbums.state}" >${{detailsAlbums.price}} Buy</button>
+    <div class="description" style="margin-left: 65px;">
+        Released {{detailsAlbums.releaseDate}}
+    </div>
+    <div style="color:white;  width: 20%; margin-left: 10px;">
+        <br>
+        {{detailsAlbums.description}}
+    </div>
+        <div class="mycart" style="margin-top: -775px; margin-left: 300px;">
+            <div class="title">
+                {{detailsAlbums.albumName}}
+                <a routerLink="/home" class="myButtonBack">back</a>
+            </div>
+
+            <div class="tablesongs" style="margin-top: 30px; margin-left: 30px;">
+                <table class="table table-striped table-dark">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Time (Sec)</th>
+                        <th scope="col">Rating</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let itemSong of songslist"   >
+                        <th scope="row">{{itemSong.id}}</th>
+                        <td>{{itemSong.name}}</td>
+                        <td>{{itemSong.artist}}</td>
+                        <td>{{itemSong.duration}}</td>
+                        <td>{{itemSong.rating}}</td>
+                        <td><button type="button" (click)="onClickSong(itemSong)" [disabled]="itemSong.state" [ngClass]="{'myButtonClick' : itemSong.state, 'myButton2': !itemSong.state}" >${{itemSong.price}}</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            
+        </div>
+    </div>
+</div>

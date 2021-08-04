@@ -1,0 +1,46 @@
+.mytable{
+    width: 70%;
+    margin-left: 15%;
+}
+
+[nz-carousel-content] {
+    text-align: center;
+    height: 450px;
+    width: 200px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  h3 {
+    color: #fff;
+    margin-bottom: 0;
+  }
+
+  .myButton {
+	background-color:#12ce7c;
+	border-radius:28px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:5px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+
+.myButtonDisable {
+	background-color:#363837;
+	border-radius:28px;
+	border:1px solid #202020;
+	display:inline-block;
+	cursor:pointer;
+	color:#2c2a2a;
+	font-family:Arial;
+	font-size:13px;
+	padding:5px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}

@@ -1,0 +1,25 @@
+<div>
+    <img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Whole_Foods_Market_logo.svg/1280px-Whole_Foods_Market_logo.svg.png" alt="">
+</div>
+<div class="formstyle">
+<form [formGroup]="profileForm" (ngSubmit)="onSubmitLogin()">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input formControlName="username" type="text"  class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="username" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input formControlName="password"  type="password" class="form-control" id="password" placeholder="Password">
+    </div>
+    <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <div class="row">
+      <button type="submit" class="btn btn-success" style="margin-left: 15%; width: 65%; margin-top: 4%;">Log In</button>
+      <button type="button" routerLink="/signup" style="width: 65%; margin-left: 15%; margin-top: 5%;" class="btn btn-secondary">Sign Up</button>
+    </div>
+  </form>
+</div>
+

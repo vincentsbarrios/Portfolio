@@ -1,0 +1,60 @@
+
+<agm-map [latitude]="lat" [longitude]="lng"></agm-map>
+
+
+<br>
+<div class="row">
+<div class="col-md-8">
+    <!--MiloginForm es de angular es un identificador de tipo ngForm -->
+  <h1>Dirreccion</h1>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Nombre</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Apellido</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Apellido">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Direccion</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="15 calle 9 y 3 avenida">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Direccion 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, estudio, o numero de piso">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">Ciudad</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">State</label>
+        <select id="inputState" class="form-control">
+          <option selected>Cortes</option>
+          <option>Francisco Morazan</option>
+          <option>La Ceiba</option>
+          <option>El Paraiso</option>
+          <option>Colon</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input type="text" class="form-control" id="inputZip" placeholder="504">
+      </div>
+    </div>
+    <br><br>
+  </form>
+  
+</div>
+    <div class="col-md-7">
+        <button class="button" style="vertical-align:middle"><span>Guardar Direccion</span></button>
+        <br><br>
+        <button class="cancelbtn" style="vertical-align:middle"><span>Cancel</span></button>
+    </div>
+
+
+

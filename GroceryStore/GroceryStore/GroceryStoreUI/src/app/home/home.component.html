@@ -1,0 +1,32 @@
+<app-nav-bar>
+</app-nav-bar>
+<div *ngIf="showMessage">
+  <div class="alert alert-primary" *ngFor="let r of todayReminders" role="alert">
+    Reminder! {{r.title}}
+    <button type="button" (click)="clickX()" class="close" data-dismiss="alert" aria-label="Close">
+      <span>&times;</span>
+    </button>
+  </div>
+</div>
+
+<div *ngIf="showMessageGrocery2">
+  <div class="alert alert-primary" role="alert">
+    One change has created!
+    <button type="button" (click)="clickGrocery()" class="close" data-dismiss="alert" aria-label="Close">
+      <span>&times;</span>
+    </button>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="card" style="width: 14rem; margin-left: 5%; margin-top: 3%; background-color: rgba(107, 112, 110, 0.774);"
+    *ngFor="let p of allProducts">
+    <img src="{{p.image}}" style="background-color: rgba(0, 255, 255, 0); height: 170px; width: 100%;"
+      class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{p.name}}</h5>
+      <h6>$ {{p.price}}</h6>
+    </div>
+  </div>
+</div>

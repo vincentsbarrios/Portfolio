@@ -1,0 +1,20 @@
+.imgcontainer{
+    width: 200px;
+}
+
+.pizzatitle
+{
+    text-align: center;
+    color: orange;
+}
+
+.tdimage{
+    width: 200px;
+}
+
+.tdinfo{
+    width: 350px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+}

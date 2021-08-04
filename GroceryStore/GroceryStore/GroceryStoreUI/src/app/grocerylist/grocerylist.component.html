@@ -1,0 +1,35 @@
+<app-nav-bar>
+</app-nav-bar>
+<table class="table table-hover table-dark" style="color: rgb(240, 240, 240); background-color: rgba(63, 66, 66, 0.815);">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">User Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Product List</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let userdata of listG">
+        <th scope="row">{{userdata.id}}</th>
+        <td>{{userdata.userId}}</td>
+        <td>{{userdata.name}}</td>
+        <table class="table table-hover table-dark" style="background-color: rgba(73, 76, 78, 0);">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of userdata.products" style="background-color: rgba(127, 255, 212, 0.377);">
+              <td >{{product.name}}</td>
+              <td >{{product.quantity}}</td>
+              <td >{{product.total}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </tr>
+    </tbody>
+  </table>

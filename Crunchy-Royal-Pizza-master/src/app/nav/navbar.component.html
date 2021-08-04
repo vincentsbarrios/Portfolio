@@ -1,0 +1,16 @@
+  <nav class="navbar navbar-dark bg-dark">
+    <a [routerLink]="['home']"><img src="https://www.visitbrookfield.com/wp-content/sabai/File/files/l_d0b6ed05171cda7ba51ce0a21e6321a8.png" style="width: 60px; padding-left: 5px;"></a>
+    
+    <a class="nav-link" [routerLink]="['pizza']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">PIZZA</a>
+    <a class="nav-link" [routerLink]="['comidas']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">COMIDA</a>
+    <a class="nav-link" [routerLink]="['bebidas']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">BEBIDAS</a>
+    <a class="nav-link" [routerLink]="['postres']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">POSTRES</a>
+    <a class="nav-link" href="#" >PROMOCIONES</a>
+    <a class="nav-link" [routerLink]="['login']" >LOGIN</a>
+    <a class="nav-link" [routerLink]="['registro']">REGISTRO</a>
+    <a class="nav-link" [routerLink]="['checkout']" >CARRITO</a>
+    <a class="welcomename" [routerLink]="['login']">BIENVENIDO {{auth.currentUser.username}}</a>
+  </nav>
+
+
+  

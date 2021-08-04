@@ -1,0 +1,57 @@
+
+
+<!-- a comment in html
+<h1 style="padding-left: 2%;">Pago</h1>
+
+<div class="row">
+    <div class="col-md-4">
+      
+      <form [formGroup]="perfilForm" autocomplete="off" (ngSubmit)="fnUpdate(perfilForm.value)" novalidate>
+  
+        <div class="form-row">
+          <div class="form-group col-md-8">
+            <label for="creditcardnumber">Numero de tarjeta</label>
+            <input formControlName="creditcardnumber" id="creditcardnumber" type="text" class="form-control" placeholder="Numero de tarjeta credito o debito..." />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="cvvnumber">CCV:</label>
+            <input formControlName="cvvnumber" id="cvvnumber" type="text" class="form-control" placeholder="CVV" />
+          </div>
+        </div>
+    
+        <div class="form-group ">
+          <label for="cardtype">Tipo de Tarejeta:</label>
+          <select id="cardtype" class="form-control">
+            <option selected>VISA</option>
+            <option>MASTERCARD</option>
+            <option>AMEX</option>
+          </select>
+        </div>
+
+
+        <div class="form-group" [ngClass]="{'error': NoValidpassword()}">
+          <label for="creditcardname">Nombre del titular:</label>
+          <em *ngIf="NoValidpassword() && perfilForm.controls.password?.errors.required">Este campo es requerido</em>
+          <input formControlName="creditcardname" id="creditcardname" type="text" class="form-control" placeholder="Apellido..." />
+        </div>  
+
+
+        <br>
+        
+        <button class="button" type="submit" style="vertical-align:middle" ><span>Entrar</span></button>
+    <br><br>
+    <button class="cancelbtn" (click)="fnCancel()" style="vertical-align:middle"><span>Cancel</span></button>
+      </form>
+    </div>
+
+     
+
+    <cart class="cartwindow"></cart>
+
+</div>
+ -->
+ <div>
+ <cart class="cartwindow"></cart>
+</div>
+
+

@@ -1,0 +1,26 @@
+.formstyle{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 3%;
+    background-color: rgba(130, 130, 134, 0);
+}
+
+.image{
+    width: 200px;
+    height: 150px;
+    margin-top: 7%;
+    margin-left: 43%;
+}
+
+.form-group{
+    color: aliceblue;
+}
+
+.form-control{
+    background-color: rgba(111, 114, 117, 0.719);
+}
+
+
+.form-check-label{
+    color: aliceblue;
+}
