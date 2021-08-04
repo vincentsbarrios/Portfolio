@@ -1,0 +1,1 @@
+{"alphabet": ["a", "b"], "states": [["A"], ["A", "B"], ["C"], ["B", "C"]], "initial_state": "A", "accepting_states": [["C"], ["B", "C"]], "transitions": [["A", "a", "AB"], ["A", "b", "C"], ["AB", "a", "AB"], ["AB", "b", "BC"], ["C", "a", "\u2205"], ["C", "b", "AB"], ["BC", "a", "A"], ["BC", "b", "AB"]]}

@@ -1,0 +1,54 @@
+import re
+
+#.       - Any Character Except New Line
+#\d      - Digit (0-9)
+#\D      - Not a Digit (0-9)
+#\w      - Word Character (a-z, A-Z, 0-9, _)
+#\W      - Not a Word Character
+#\s      - Whitespace (space, tab, newline)
+#\S      - Not Whitespace (space, tab, newline)
+
+#\b      - Word Boundary
+#\B      - Not a Word Boundary
+#^       - Beginning of a String
+#$       - End of a String
+
+#[]      - Matches Characters in brackets
+#[^ ]    - Matches Characters NOT in brackets
+#|       - Either Or
+#( )     - Group
+
+
+#Quantifiers:
+#*       - 0 or More
+#+       - 1 or More
+#?       - 0 or One
+#{3}     - Exact Number
+#{3,4}   - Range of Numbers (Minimum, Maximum)
+
+
+#### Sample Regexs ####
+#[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+
+
+#Ejemplos
+#* 11 de septiembre del 2001
+#* Para el 11 de sept. del 2001 yo tenia 2 años
+#* 11 septiembre 2001
+#* 20 eneto de 2020
+#* 20 de eneto de 99
+#* Para el 11/09/ 2001 yo tenia 2 años
+#* Para el 11 septiembre 2001 yo tenia 2 años
+#* Para el 11-09-2001 yo tenia 2 años
+#* Para el 11 de sept. del 2001 yo tenia 2 años
+#* Para el 11 de sep del 2001 yo tenia 2 años
+#* Para el 11 de septiembre del 2001 yo tenia 2 años
+
+#proyecto
+# * + ab |
+#a b | a c puedo requerir utilicen (,) -> tokens= string.split()
+
+regex = r"\d{2}\s(de|del|[-/])?\s(ene|feb|mar|abr|may|jun|jul|ago|sept|oct|nov|dic)([a-zA-Z])*\s(del?|[-/])?\s\d{2,4}"
+
+exp = "11 de septiembre del 2001"
+
+matches = re.findall(regex,exp)

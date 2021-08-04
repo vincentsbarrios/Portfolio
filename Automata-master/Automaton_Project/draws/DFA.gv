@@ -1,0 +1,18 @@
+digraph "Graph" {
+	rankdir=LR size=5
+	fake [style=invisible]
+	fake -> A [style=bold]
+	A [root=true]
+	node [shape=doublecircle]
+	C
+	BC
+	node [shape=circle]
+	A -> AB [label=a]
+	A -> C [label=b]
+	AB -> AB [label=a]
+	AB -> BC [label=b]
+	C -> "∅" [label=a]
+	C -> AB [label=b]
+	BC -> A [label=a]
+	BC -> AB [label=b]
+}
