@@ -1,0 +1,5 @@
+﻿  GameLogic.cpp
+c:\users\ghost\source\repos\racegame(final version)\racegame(final version)\gamelogic.cpp(28): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\ghost\source\repos\racegame(final version)\racegame(final version)\gamelogic.cpp(209): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\ghost\source\repos\racegame(final version)\racegame(final version)\gamelogic.cpp(282): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+  RaceGame(final version).vcxproj -> C:\Users\Ghost\source\repos\RaceGame(final version)\Debug\RaceGame(final version).exe
